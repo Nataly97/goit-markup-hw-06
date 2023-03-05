@@ -14,6 +14,7 @@
     --color-banner: rgba(47, 48, 58, 0.4);
     --color-catalogue: rgba(33, 150, 243, 0.9);
     --color-modal: rgba(0, 0, 0, 0.2);
+    --color-input--sucribe: rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -235,11 +236,16 @@ p {
 
 .container-location {
     margin-right: 70px;
-    margin-left: -550px;
+    margin-left: -650px;
+    margin-bottom: 60px;
+    width: 231px;
+    height: 81px;
 }
 
 .container-networks {
     margin-top: 10px;
+    width: 206px;
+    height: 80px;
 }
 
 .company-contact {
@@ -305,6 +311,7 @@ p {
 
 .icon-networks-company>svg {
     margin: 12px;
+    fill: var(--white-color);
 }
 
 .icons-networks>div:hover,
@@ -475,6 +482,67 @@ p {
     margin-bottom: 55px;
 }
 
+
+/* Suscrubirse */
+
+.button-suscribe {
+    width: 200px;
+    height: 50px;
+    padding: 10px 39px;
+    display: flex;
+    align-items: center;
+    background: var(--blue-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+}
+
+.container-form-suscribe {
+    margin-top: 35px;
+    display: flex;
+}
+
+.icon-Suscribirse {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.input-suscribe {
+    width: 358px;
+    margin-top: 20px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px --color-input--sucribe);
+    background-color: var(--black-color) 1;
+    color: var(--light-white-color);
+    align-items: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+}
+
+.form-subscribe {
+    position: relative;
+    margin-left: 650px;
+    margin-top: -135px;
+    display: flex;
+    width: 570px;
+    height: 86px;
+}
+
+.label-suscribe {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
 /* Estilos modal */
 .container-modal {
     position: fixed;
@@ -489,7 +557,7 @@ p {
 }
 
 .is-hidden {
-    opacity:0;
+    opacity: 0;
     pointer-events: unset;
     visibility: hidden;
 }
@@ -501,9 +569,10 @@ p {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin: auto;
+    display: block;
 }
 
-.modal-close{
+.modal-close {
     width: 100%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -511,10 +580,133 @@ p {
     border-radius: 50%;
 }
 
-.modal-close-button{
-    width: 30px;
-    height: 30px;
-    float: right;
-    margin: 8px;
+/* Formulario Modal */
+.formOrder {
+    justify-content: space-between;
+    padding: 40px;
 }
 
+.formOrder .btn-Send {
+    width: 200px;
+    height: 50px;
+    margin-left: 130px;
+}
+
+.formOrder .btn-Send button {
+    width: 100%;
+    height: 100%;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+}
+
+.formOrder .icon-revisado {
+    margin-top: 15px;
+    width: 425px;
+    margin-left: 32px;
+}
+
+.formOrder svg {
+    position: relative;
+    top: 35px;
+    left: -40px;
+}
+
+.formOrder .modal-close-button svg {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 8px 8px 2px 2px;
+    left: 450px;
+    top: -40px;
+}
+
+.formOrder #icon-email {
+    left: -30px;
+}
+
+.formOrder #icon-revisado {
+    position: relative;
+    left: -90px;
+    top: -15px;
+    /* fill: var(--white-color); */
+}
+
+.modal h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    width: 448px;
+    height: 23px;
+    margin-top: -40px;
+}
+
+.modal input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.modal input:hover {
+    border: 1px solid var(--blue-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal label {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    display: block;
+    position: relative;
+
+}
+
+.modal label:hover {
+    fill: var(--blue-color);
+    transform: scale(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button svg:hover {
+    fill: var(--blue-color);
+    cursor: pointer;
+    transform: scale(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal textarea {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    resize: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    padding: 16px 12px;
+}
+
+.modal textarea:hover {
+    border: 1px solid var(--blue-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transform: scale(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

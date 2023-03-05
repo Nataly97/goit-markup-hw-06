@@ -332,18 +332,76 @@
                 </div>
             </div>
         </div>
+
+        <form class="form-subscribe" name="formSubscribe">
+            <div class="label-suscribe">
+                <label for="suscribe">
+                    SUSCRÍBASE AL BOLETIN INFORMATIVO
+                    <input id="suscribe" name="btnSuscribe" class="input-suscribe" type="text"
+                        placeholder="Correo electrónico">
+                </label>
+            </div>
+            <div class="container-form-suscribe">
+                <button class="button-suscribe" type="submit">Suscríbase
+                    <svg class="icon-Suscribirse" width="10" height="16">
+                        <use xlink:href="images/icons.svg#icon-enviar-cono"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
     </footer>
 
     <!-- script de modal-->
     <div class="container-modal is-hidden" data-modal>
         <div class="modal">
-           <div class="modal-close-button">
-                <button class="modal-close" data-modal-close>X</button>
-            </div> 
-            <p>
-                Pendiente
-            </p>
-            
+            <form class="formOrder" name="formOrder">
+                <div class="modal-close-button">
+                    <svg class="modal-close" width="10" height="16" data-modal-close>
+                        <use xlink:href="images/icons.svg#icon-cerrar"></use>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Deje sus datos, nos contactaremos con usted</h2>
+                </div>
+
+                <label for="name">
+                    Nombre
+                    <svg width="18" height="18">
+                        <use xlink:href="images/icons.svg#icon-persona-negra"></use>
+                    </svg>
+                    <input id="name" name="txtName" type="text">
+                </label>
+                <label for="phone">
+                    Teléfono
+                    <svg width="18" height="18">
+                        <use xlink:href="images/icons.svg#icon-telefono-negro"></use>
+                    </svg>
+                    <input id="phone" name="txtPhone" type="tel">
+                </label>
+                <label for="email">
+                    E-mail
+                    <svg id="icon-email" width="18" height="18">
+                        <use xlink:href="images/icons.svg#icon-correo-electrnico-negro"></use>
+                    </svg>
+                    <input id="email" name="txtEmail" type="email">
+                </label>
+                <label for="comentario">
+                    Comentario
+                    <textarea id="comentario" name="txtComentario" cols="30" rows="10"
+                        placeholder="Introduzca el texto"></textarea>
+                </label>
+                <label class="icon-revisado" for="terms">
+                    Estoy de acuerdo con el boletín informativo y acepto los
+                    Términos y Condiciones
+                    <svg id="icon-revisado" width="10" height="16">
+                        <use xlink:href="images/icons.svg#icon-cono-revisado"></use>
+                    </svg>
+                </label>
+                <div class="btn-Send">
+                    <button type="submit" name="btnSend">Enviar</button>
+                </div>
+            </form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
