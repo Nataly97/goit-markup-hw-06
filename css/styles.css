@@ -589,7 +589,7 @@ p {
 .formOrder .btn-Send {
     width: 200px;
     height: 50px;
-    margin-left: 130px;
+    margin-left: 125px;
 }
 
 .formOrder .btn-Send button {
@@ -609,15 +609,16 @@ p {
 }
 
 .formOrder .icon-revisado {
-    margin-top: 15px;
-    width: 425px;
-    margin-left: 32px;
+    margin-top: 20px;
+    width: 423px;
+    height: 171%;
+    margin-left: 37px;
 }
 
 .formOrder svg {
     position: relative;
     top: 35px;
-    left: -40px;
+    left: -37px;
 }
 
 .formOrder .modal-close-button svg {
@@ -635,9 +636,18 @@ p {
 
 .formOrder #icon-revisado {
     position: relative;
-    left: -90px;
+    left: -95px;
     top: -15px;
-    /* fill: var(--white-color); */
+    border: 2px solid var(--black-color);
+    fill: var(--white-color);
+    border-radius: 3px;
+}
+
+.formOrder #icon-revisado:hover {
+    border: none;
+    fill: var(--blue-color);
+    transform: scale(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal h2 {
@@ -657,6 +667,7 @@ p {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-top: 4px;
+    padding-left: 35px;
 }
 
 .modal input:hover {
