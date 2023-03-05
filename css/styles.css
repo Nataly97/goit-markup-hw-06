@@ -482,7 +482,6 @@ p {
     margin-bottom: 55px;
 }
 
-
 /* Suscrubirse */
 
 .button-suscribe {
@@ -631,8 +630,13 @@ p {
 }
 
 .formOrder #icon-email {
-    left: -30px;
+    left: -25px;
 }
+
+.formOrder #email {
+    padding-left: 38px;
+}
+
 
 .formOrder #icon-revisado {
     position: relative;
